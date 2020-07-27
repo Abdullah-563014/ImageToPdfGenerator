@@ -41,7 +41,6 @@
             android:layout_marginEnd="10dp">
 
             <ImageView
-                android:id="@+id/iv_gallery_icon_option_dialog"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:src="@drawable/gallery_icon" />
@@ -71,7 +70,6 @@
             android:layout_marginStart="10dp">
 
             <ImageView
-                android:id="@+id/iv_camera_icon_option_dialog"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:src="@drawable/camera_intent_icon" />

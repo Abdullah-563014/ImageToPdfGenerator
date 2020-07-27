@@ -1,13 +1,9 @@
 <resources>
-    <string name="app_name">FastScanner</string>
-    <string name="pdf_ext" translatable="false">.pdf</string>
+    <string name="app_name">Document Scanner Pro</string>
     <string name="pdf_type" translatable="false">application/pdf</string>
     <string name="share_text">Share App</string>
 
-    <!--Ad mob Ads Id Setup-->
-    <string name="app_id">ca-app-pub-7593602752326571~9741880691</string>
-    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
     <string name="home">Home</string>
     <string name="camera"> From Camera</string>
     <string name="gallery">From Gallery</string>

@@ -14,15 +14,9 @@
     </style>
 
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="ButtonStyle.BorderLess" parent="Widget.AppCompat.Button.Borderless.Colored">
-        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="ImagePickerTheme" parent="ef_BaseTheme">

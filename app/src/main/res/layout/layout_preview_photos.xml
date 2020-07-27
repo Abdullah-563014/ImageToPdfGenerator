@@ -15,8 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-        android:layout_above="@+id/layout_create_pdf_button_container"
-        android:id="@+id/layout_rv_container_photo_preview">
+        android:layout_above="@+id/layout_create_pdf_button_container">
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

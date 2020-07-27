@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.srteam.fsr.fastscanner.ui.activities.SplashActivity">
+    tools:context=".ui.activities.SplashActivity">
 
 
     <ImageView
         android:id="@+id/imvLogo"
         android:layout_centerInParent="true"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_splash"/>
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher"/>
 
 
 </RelativeLayout>
