@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:weightSum="2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/layout_btn_crop_current_photo_cropper">
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                app:materialIcon="crop"
+                app:materialIconColor="@color/white"/>
+        </FrameLayout>
+
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/layout_fit_cropping_photos">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="Crop Image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.35">
+        <com.isseiaoki.simplecropview.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crop_imageview_crop_activity"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:scv_crop_mode="fit_image"
+            custom:scv_background_color="@color/black"
+            custom:scv_handle_color="@color/colorAccent"
+            custom:scv_guide_color="@color/colorAccent"
+            custom:scv_frame_color="@color/colorAccent"
+            custom:scv_handle_size="14dp"
+            custom:scv_touch_padding="8dp"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_min_frame_size="50dp"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_stroke_weight="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_white"
+            android:visibility="gone"
+            android:id="@+id/loading_layout_cropping_activity">
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/pw_crop_photo"
+                app:matProg_progressIndeterminate="true"
+                app:matProg_barColor="@color/colorAccent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pw_crop_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Cropping photo. Please wait..."
+                android:textStyle="bold"
+                android:id="@+id/tv_crop_status_crop_activity"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:padding="5dp"
+            android:layout_toLeftOf="@+id/layout_done_cropping_photos"
+            android:layout_toStartOf="@+id/layout_done_cropping_photos"
+            android:id="@+id/rv_photo_list_crop_photo"/>
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/layout_done_cropping_photos"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <net.steamcrafted.materialiconlib.MaterialIconView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                app:materialIcon="arrow_right"
+                app:materialIconColor="@color/white"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

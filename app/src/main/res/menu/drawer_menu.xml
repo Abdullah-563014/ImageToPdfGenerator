@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:checkable="true"
+        android:id="@+id/nav_camera_list"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/camera" />
+
+    <item
+        android:checkable="true"
+        android:id="@+id/nav_gallary"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/gallery" />
+
+    <item android:title="@string/others">
+        <menu>
+
+            <item
+                android:checkable="true"
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy_policy"
+                android:title="@string/privacy_policy" />
+
+            <item
+                android:checkable="true"
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share_app" />
+
+            <item
+                android:checkable="true"
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate"
+                android:title="@string/rate_app" />
+
+            <item
+                android:checkable="true"
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.srteam.fsr.fastscanner">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".FastScannerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activities.PrivacyPolicyActivity"></activity>
+        <activity
+            android:name=".ui.activities.AboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.CameraActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.ImageCropperActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.PhotoFilterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.PhotoPreviewActivity"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>

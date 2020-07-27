@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.PrivacyPolicyActivity">
+    <TextView
+        android:id="@+id/readPrivacyPolicyTitleTextViewId"
+        android:layout_alignParentTop="true"
+        android:text="@string/privacy_policy"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#009688"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/readPrivacyPolicyTitleTextViewId"
+        android:layout_above="@+id/readPrivacyPolicyReadFromOnlineButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="@string/privacy_policy_description"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <Button
+        android:id="@+id/readPrivacyPolicyReadFromOnlineButtonId"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:text="Read From Online"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

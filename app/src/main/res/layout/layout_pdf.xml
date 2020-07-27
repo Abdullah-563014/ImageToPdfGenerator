@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@color/divider"
+            android:id="@+id/iv_pdf"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight=".9"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of File"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:id="@+id/tv_file_name_pdf"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:id="@+id/tv_time_pdf"
+                android:text="dates created"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="top"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:id="@+id/iv_more"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

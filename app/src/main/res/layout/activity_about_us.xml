@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/backButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_gravity="center"
+        app:materialIcon="arrow_left"
+        app:materialIconColor="@color/white"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logo"
+            android:id="@+id/imageView2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/phenomenaTextView" />
+
+    <TextView
+        android:id="@+id/txtAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phenomenaTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Version 1.0"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

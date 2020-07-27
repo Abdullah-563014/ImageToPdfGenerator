@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_barColor="@color/colorAccent"
+        android:id="@+id/pw_photo_preview"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_above="@+id/layout_create_pdf_button_container"
+        android:id="@+id/layout_rv_container_photo_preview">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_photo_previews"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/layout_create_pdf_button_container"
+        android:background="@color/transparent_white">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            style="@style/ButtonStyle"
+            android:text="CREATE PDF"
+            android:id="@+id/btn_create_pdf_preview_photos"/>
+    </LinearLayout>
+</RelativeLayout>

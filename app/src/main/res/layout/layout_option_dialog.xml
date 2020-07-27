@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take File"/>
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_gallery_option_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/iv_gallery_icon_option_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/gallery_icon" />
+
+            <TextView
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:text="@string/gallery"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/layout_camera_option_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:id="@+id/iv_camera_icon_option_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/camera_intent_icon" />
+
+            <TextView
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center"
+                android:text="@string/camera"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
